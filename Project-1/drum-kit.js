@@ -1,6 +1,6 @@
 
 
-(function (){
+(function iife(){
 
 /*
 Object view that creates effect based on which key is pressed
@@ -37,12 +37,17 @@ var audio = {
 
 
 window.onload = function(){
+
   document.addEventListener('keydown',function (e){
     
     view.display(e.keyCode);
     audio.playAudio(e.keyCode);
-
   });
 
+  document.addEventListener('keyup',function (e){
+    view.remove(e.keyCode);
+  }); 
+
 }
+
 })();
