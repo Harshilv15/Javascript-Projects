@@ -6,17 +6,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <form>
+    <input type="text"  class="text-style" id="timezoneSearch" placeholder="Exm: Ottawa/Ottawa,CA"></input>
+    <input type="button" class="button-style" id="searchButton" value="Search"><br>
+    <span id="msg"></span>
+  </form>
   <div class="location">
-    <h1 class = "location-timezone">Timezone</h1>
-    <p>icon</p>
+    <h2 class="location-timezone" id="display"></h2>
+    <p id="icon"></p>
   </div>
   <div class="temperature">
     <div class="degree-section">
-      <h2 class="temperature-degree">34</h2>
-      <span>F</span>
+      <h2 class="temperature-degree" id="temp"></h2>
+      <span id="span-degrees"></span>
     </div>
-    <div class="temperature-description">It's cold
-    </div>
+    <div class="temperature-description" id="description"></div>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>

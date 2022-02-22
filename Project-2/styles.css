@@ -13,6 +13,34 @@ body {
   font-family: sans-serif;
   color: white;
 }
+.text-style{
+  background-color: transparent;
+  font-size: 25px;
+  color: #eeeeee;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid black 1px;
+  padding: 5px 20px;
+}
+.button-style:hover{
+  background: lemonchiffon;
+  color: black;
+  border: 2px solid #eee;
+  padding: 5px 10px;
+  box-shadow: none;
+  text-shadow: none;
+}
+.button-style {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #eee;
+  padding: 5px 10px;
+  box-shadow: none;
+  text-shadow: none;
+}
 .location, 
 .temperature{
   height: 30vh;
@@ -36,5 +64,7 @@ body {
 .degree-section h2{
   font-size: 40px;
 }
-
+#msg{
+  color: red;
+}
 
